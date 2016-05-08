@@ -1,0 +1,91 @@
+/*
+Atomyc framework
+Pattern template
+*/
+
+
+/*ATOMS*/
+
+@import "../atoms/colours.less";
+@import "../atoms/animation.less";
+@import "../atoms/fonts.less";
+@import "../atoms/headings.less";
+@import "../atoms/default.less";
+@import "../atoms/p.less";
+@import "../atoms/a.less";
+@import "../atoms/button_primary.less";
+@import "../atoms/button_secondary.less";
+@import "../atoms/button_warning.less";
+@import "../atoms/button_primary_hold.less";
+@import "../atoms/button_secondary_hold.less";
+@import "../atoms/button_warning_hold.less";
+@import "../atoms/basicgrid.less";
+@import "../atoms/flexgrid.less";
+@import "../atoms/visibility.less";
+
+/*MOLECULES*/
+
+@import "../molecules/primary_nav.less";
+@import "../molecules/card_color.less";
+@import "../molecules/list_onle_line.less";
+@import "../molecules/list_no_style.less";
+
+/*ORGANISMS*/
+
+
+/*TEMPLATES*/
+
+
+/*OWN DESIGN*/
+
+main {
+	section {
+		h1 {
+			select {
+				border: 0px;
+				outline: none;
+				cursor: pointer;
+			}
+		}
+		h2 {
+			font-weight: 400;
+			border-bottom: 1px solid @blackcolour;
+			font-size: 2.14rem;
+		}
+		.no_border_bottom{
+			border-bottom: 0px;
+			font-weight: 900;
+			font-size: 2.5rem;
+		}
+	}
+	.card_color {
+		&:nth-child(2) {
+			.card_color_contain {
+				.box_color {
+					background-color: @secondarycolour;
+				}
+			}
+		}
+		&:nth-child(3) {
+			.card_color_contain {
+				.box_color {
+					background-color: @warningcolour;
+				}
+			}
+		}
+		&:nth-child(4) {
+			.card_color_contain {
+				.box_color {
+					background-color: @graycolour;
+				}
+			}
+		}
+		&:nth-child(5) {
+			.card_color_contain {
+				.box_color {
+					background-color: @blackcolour;
+				}
+			}
+		}
+	}
+}

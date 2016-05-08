@@ -1,0 +1,68 @@
+/*
+Atomyc framework
+Index template
+*/
+
+
+/*ATOMS*/
+
+@import "../atoms/colours.less";
+@import "../atoms/animation.less";
+@import "../atoms/fonts.less";
+@import "../atoms/headings.less";
+@import "../atoms/default.less";
+@import "../atoms/p.less";
+@import "../atoms/a.less";
+@import "../atoms/button_primary.less";
+@import "../atoms/button_secondary.less";
+@import "../atoms/button_warning.less";
+@import "../atoms/button_primary_hold.less";
+@import "../atoms/button_secondary_hold.less";
+@import "../atoms/button_warning_hold.less";
+
+/*MOLECULES*/
+
+
+/*ORGANISMS*/
+
+
+/*TEMPLATES*/
+
+
+/*OWN DESIGN*/
+
+.headerimg {
+	background-image: url(../../img/cover.jpg);
+	background-size: cover !important;
+	height: 1px;
+	margin: 0px !important;
+	padding: 0px !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: -webkit-flex;
+	#infoheaderimg {
+		text-align: center;
+		margin: 0 auto;
+		width: 100%;
+		h1 {
+			color: @whitecolour;
+			text-align: center;
+		}
+		.button_primary_hold {
+			display: inline-block;
+			font-size: 1.42rem;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 25px;
+			padding-right: 25px;
+		}
+		
+		p{
+			color: @whitecolour;
+			font-size: 1.42rem;
+			font-family: 'Quicksand', sans-serif;
+		}
+	}
+}

@@ -1,0 +1,41 @@
+/*
+Atomyc framework
+Primary nav
+*/
+
+.primary_nav {
+	height: 60px;
+	border-bottom: 1px solid @blackcolour;
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		display: -webkit-flex;
+		margin: 0 auto;
+		width: 100%;
+		max-width: 1200px;
+		height: 60px;
+	}
+	.logo {
+		font-family: @primaryfont;;
+		font-size: 2.14rem;
+	}
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			text-transform: uppercase;
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0px;
+			}
+			a {
+				transition: @animationdur;
+				&:hover {
+					color: @primarycolour;
+				}
+			}
+		}
+	}
+}

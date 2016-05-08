@@ -1,0 +1,137 @@
+/*
+Atomyc framework
+Flex Grid
+*/
+
+.kolflex {
+	display: flex;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+.flexdir_ltr {
+	/*de izquierda a derecha*/
+	flex-direction: row;
+	-ms-flex-direction: row;
+}
+
+.flexdir_rtl {
+	/*de derecha a izquierda*/
+	flex-direction: row-reverse;
+	-ms-flex-direction: row-reverse;
+}
+
+.flexdir_ttb {
+	/*de arriba abajo*/
+	flex-direction: column;
+	-ms-flex-direction: column;
+}
+
+.flexdir_btt {
+	/*de abajo arriba*/
+	flex-direction: column-reverse;
+	-ms-flex-direction: column-reverse;
+}
+
+.flex_one {
+	/*solo una linea*/
+	flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+}
+
+.flex_multi_ltr {
+	/*multi linea izquierda a derecha*/
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+}
+
+.flex_multi_rtl {
+	/*multi linea derecha a izquierda*/
+	flex-wrap: wrap-reverse;
+	-ms-flex-wrap: wrap-reverse;
+}
+
+.flex_start {
+	justify-content: flex-start;
+	-ms-flex-pack: start;
+}
+
+.flex_end {
+	justify-content: flex-end;
+	-ms-flex-pack: end;
+}
+
+.flex_center {
+	justify-content: center;
+	-ms-flex-pack: center;
+}
+
+.flex_btw {
+	justify-content: space-between;
+	-ms-flex-pack: justify;
+}
+
+.flex_around {
+	justify-content: space-around;
+	-ms-flex-pack: distribute;
+}
+
+.flex_alg_start {
+	/*arriba*/
+	align-items: flex-start;
+	-ms-flex-align: start;
+}
+
+.flex_alg_end {
+	/*abajo*/
+	align-items: flex-end;
+	-ms-align-items: end;
+}
+
+.flex_alg_center {
+	/*en el centro*/
+	align-items: center;
+	-ms-align-items: center;
+}
+
+.flex_alg_stretch {
+	/*todo*/
+	align-items: stretch;
+	-ms-align-items: stretch;
+}
+
+.flex_alg_base {
+	/*con el texto*/
+	align-items: baseline;
+	-ms-align-items: baseline;
+}
+
+.flex_cont_start {
+	align-content: flex-start;
+	-ms-flex-line-pack: start;
+}
+
+.flex_cont_end {
+	align-content: flex-end;
+	-ms-flex-line-pack: end;
+}
+
+.flex_cont_center {
+	align-content: center;
+	-ms-flex-line-pack: center;
+}
+
+.flex_cont_btw {
+	align-content: space-between;
+	-ms-flex-line-pack: justify;
+}
+
+.flex_cont_around {
+	align-content: space-around;
+	-ms-flex-line-pack: distribute;
+}
+
+.flex_cont_stretch {
+	align-content: stretch;
+	-ms-flex-line-pack: stretch;
+}

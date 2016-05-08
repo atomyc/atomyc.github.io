@@ -1,0 +1,239 @@
+/*
+Atomyc framework
+Basic Grid
+*/
+
+.kolbig {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.kolbig:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='kol-'] {
+	float: left;
+	padding: .3em;
+	/*max-width: 1020px;*/
+	margin-top: .3em;
+}
+
+.kol-1 {
+	width: 100%;
+}
+
+.kol-90 {
+	width: 90%;
+}
+
+.kol-90-noresize {
+	width: 90% !important;
+}
+
+.kol-80 {
+	width: 80%;
+}
+
+.kol-80-noresize {
+	width: 80% !important;
+}
+
+.kol-75 {
+	width: 75%;
+}
+
+.kol-75-noresize {
+	width: 75% !important;
+}
+
+.kol-66 {
+	width: calc(100%/3*2);
+}
+
+.kol-66-noresize {
+	width: calc(100%/3*2) !important;
+}
+
+.kol-60 {
+	width: 60%;
+}
+
+.kol-60-noresize {
+	width: 60% !important;
+}
+
+.kol-2 {
+	width: 50%;
+}
+
+.kol-2-noresize {
+	width: 50% !important;
+}
+
+.kol-40 {
+	width: 40%;
+}
+
+.kol-40-noresize {
+	width: 40% !important;
+}
+
+.kol-3 {
+	width: calc(100%/3*1);
+}
+
+.kol-3-noresize {
+	width: calc(100%/3*1) !important;
+}
+
+.kol-4 {
+	width: 25%;
+}
+
+.kol-4-noresize {
+	width: 25% !important;
+}
+
+.kol-5 {
+	width: 20%;
+}
+
+.kol-5-noresize {
+	width: 20% !important;
+}
+
+.kol-6 {
+	width: calc(100%/6*1);
+}
+
+.kol-6-noresize {
+	width: calc(100%/6*1) !important;
+}
+
+.kol-7 {
+	width: calc(100%/7*1);
+}
+
+.kol-7-noresize {
+	width: calc(100%/7*1) !important;
+}
+
+.kol-8 {
+	width: 12.5%;
+}
+
+.kol-8-noresize {
+	width: 12.5% !important;
+}
+
+.kol-9 {
+	width: calc(100%/9*1);
+}
+
+.kol-9-noresize {
+	width: calc(100%/9*1);
+}
+
+.kol-10 {
+	width: 10%;
+}
+
+.kol-10-noresize {
+	width: 10% !important;
+}
+
+.kol-11 {
+	width: calc(100%/11*1);
+}
+
+.kol-11-noresize {
+	width: calc(100%/11*1) !important;
+}
+
+.kol-12 {
+	width: calc(100%/12*1);
+}
+
+.kol-12-noresize {
+	width: calc(100%/12*1) !important;
+}
+
+.centerkol {
+	float: none !important;
+	margin: .3em auto !important;
+}
+
+@media (max-width: 1400px) {
+	/*Pantallas grandes*/
+}
+
+@media (max-width: 1200px) {
+	/*Pantallas normales notebooks*/
+	.kol-11,
+	.kol-10,
+	.kol-8,
+	.kol-4,
+	.kol-3 {
+		width: 50%;
+	}
+	.kol-7 {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) {
+	/*Tablets*/
+	.kol-12,
+	.kol-10,
+	.kol-8,
+	.kol-6,
+	.kol-4 {
+		width: 50%;
+	}
+	.kol-11,
+	.kol-9,
+	.kol-7,
+	.kol-5,
+	.kol-3,
+	.kol-2,
+	.kol-75,
+	.kol-66,
+	.kol-90,
+	.kol-40,
+	.kol-80,
+	.kol-60 {
+		width: 100%;
+	}
+	.koltable {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+
+@media (max-width: 480px) {
+	/*Pantallas smartphones*/
+	.kol-1,
+	.kol-2,
+	.kol-3,
+	.kol-4,
+	.kol-5,
+	.kol-6,
+	.kol-7,
+	.kol-8,
+	.kol-9,
+	.kol-10,
+	.kol-11,
+	.kol-12,
+	.kol-75,
+	.kol-66,
+	.kol-90,
+	.kol-40,
+	.kol-80,
+	.kol-60 {
+		width: 100%;
+	}
+}
