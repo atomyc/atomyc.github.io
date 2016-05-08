@@ -1,0 +1,75 @@
+/*
+Atomyc framework
+Inline Text
+*/
+
+a {
+	font-size: 1rem;
+	cursor: pointer;
+	text-decoration: none;
+	color: @blackcolour;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+em,
+i,
+cite,
+dfn,
+var {
+	font-style: italic;
+}
+
+u,
+ins {
+	text-decoration: underline;
+}
+
+del,
+s {
+	text-decoration: line-through;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+small {
+	font-size: smaller;
+}
+
+abbr {
+	cursor: help;
+	border-bottom: 1px dotted @graycolour;
+}
+
+tt,
+code,
+kbd,
+samp {
+	font-family: monospace;
+}
+
+q {
+	display: inline;
+	&:before {
+		content: open-quote;
+	}
+	&:after {
+		content: close-quote;
+	}
+}
+
+mark {
+	background-color: yellow;
+	color: @blackcolour;
+}
