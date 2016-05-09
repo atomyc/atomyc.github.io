@@ -122,49 +122,108 @@ Animation
 	}
 }
 
+
 /*RING ANIMATION*/
+
 .ringanimated {
-  animation: ring 0.4s ease infinite;
-  transform-origin: 50% 0px;
+	animation: ring 0.4s ease infinite;
+	transform-origin: 50% 0px;
 }
+
 @keyframes ring {
-  0% { transform: rotate(-15deg) }
-  10% { transform: rotate(15deg) }
-  20% { transform: rotate(-18deg) }
-  30% { transform: rotate(18deg) }
-  40% { transform: rotate(-22deg) }
-  50% { transform: rotate(22deg) }
-  60% { transform: rotate(-18deg) }
-  70% { transform: rotate(18deg) }
-  80% { transform: rotate(-12deg) }
-  90% { transform: rotate(12deg) }
-  100% { transform: rotate(0deg) }
+	0% {
+		transform: rotate(-15deg)
+	}
+	10% {
+		transform: rotate(15deg)
+	}
+	20% {
+		transform: rotate(-18deg)
+	}
+	30% {
+		transform: rotate(18deg)
+	}
+	40% {
+		transform: rotate(-22deg)
+	}
+	50% {
+		transform: rotate(22deg)
+	}
+	60% {
+		transform: rotate(-18deg)
+	}
+	70% {
+		transform: rotate(18deg)
+	}
+	80% {
+		transform: rotate(-12deg)
+	}
+	90% {
+		transform: rotate(12deg)
+	}
+	100% {
+		transform: rotate(0deg)
+	}
 }
+
 
 /*VERTICAL ANIMATION*/
+
 .verticalanimated {
-  animation: verticala 0.44s ease infinite;
-}
-@keyframes verticala {
-  0% { transform:translate(0,-3px) }
-  18.18182% { transform:translate(0,3px) }
-  36.36364% { transform:translate(0,-3px) }
-  54.54545% { transform:translate(0,3px) }
-  72.72727% { transform:translate(0,-3px) }
-  90.90909% { transform:translate(0,3px) }
-  100% { transform:translate(0,0) }
+	animation: verticala 0.44s ease infinite;
 }
 
-/*HORIZONTAL ANIMATION*/
-.horizontalanimated {
-  animation: horizontala 0.72s ease infinite;
+@keyframes verticala {
+	0% {
+		transform: translate(0, -3px)
+	}
+	18.18182% {
+		transform: translate(0, 3px)
+	}
+	36.36364% {
+		transform: translate(0, -3px)
+	}
+	54.54545% {
+		transform: translate(0, 3px)
+	}
+	72.72727% {
+		transform: translate(0, -3px)
+	}
+	90.90909% {
+		transform: translate(0, 3px)
+	}
+	100% {
+		transform: translate(0, 0)
+	}
 }
+
+
+/*HORIZONTAL ANIMATION*/
+
+.horizontalanimated {
+	animation: horizontala 0.72s ease infinite;
+}
+
 @keyframes horizontala {
-  0% { transform:translate(0,0) }
-  16.66667% { transform:translate(5px,0) }
-  33.33333% { transform:translate(0,0) }
-  50% { transform:translate(5px,0) }
-  66.66667% { transform:translate(0,0) }
-  83.33333% { transform:translate(5px,0) }
-  100% { transform:translate(0,0) }
+	0% {
+		transform: translate(0, 0)
+	}
+	16.66667% {
+		transform: translate(5px, 0)
+	}
+	33.33333% {
+		transform: translate(0, 0)
+	}
+	50% {
+		transform: translate(5px, 0)
+	}
+	66.66667% {
+		transform: translate(0, 0)
+	}
+	83.33333% {
+		transform: translate(5px, 0)
+	}
+	100% {
+		transform: translate(0, 0)
+	}
 }
