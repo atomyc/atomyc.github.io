@@ -299,3 +299,62 @@ Animation
 		transform: rotate(359deg)
 	}
 }
+
+
+/*FLOAT ANIMATION*/
+
+.floatanimated {
+	animation: float 2s linear infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0)
+	}
+	50% {
+		transform: translateY(-6px)
+	}
+	100% {
+		transform: translateY(0)
+	}
+}
+
+
+/*PULSE ANIMATION*/
+
+.pulseanimated {
+	animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.1)
+	}
+	50% {
+		transform: scale(0.8)
+	}
+	100% {
+		transform: scale(1.1)
+	}
+}
+
+
+/*BURST ANIMATION*/
+
+.burstanimated {
+	animation: burst 2s linear infinite;
+}
+
+@keyframes burst {
+	0% {
+		opacity: 1
+	}
+	99.999% {
+		transform: scale(1.8);
+		opacity: 0
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1
+	}
+}
