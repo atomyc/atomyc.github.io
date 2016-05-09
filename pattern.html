@@ -568,7 +568,7 @@
 					<option value="wrenchanimated">Whrench</option>
 					<option value="shakeanimated">Shake</option>
 				</select>
-				<img class="animated wrenchanimated" src="img/Logo/atomycicon.png" alt="logo atomyc animation" id="getanimation">
+				<img class="" src="img/Logo/atomycicon.png" alt="logo atomyc animation" id="getanimation">
 			</div>
 			<h2>
 				Visibility
@@ -722,7 +722,7 @@ p q r s t u v w x y z { | } ~
 
 		});
 		function setanimation(){
-			$("#getanimation").attr("class",$("#setanimation").val())
+			$("#getanimation").attr("class","animated" + $("#setanimation").val())
 		}
 	</script>
 </body>
