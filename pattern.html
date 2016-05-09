@@ -563,10 +563,10 @@
 				Animations
 			</h2>
 			<div id="box_animation_info">
-				<select>
+				<select onchange="setanimation();" id="setanimation">
 					<option value="0">Animation</option>
-					<option value="1">Whrench</option>
-					<option value="2">Shake</option>
+					<option value="wrench">Whrench</option>
+					<option value="shake">Shake</option>
 				</select>
 				<img src="img/Logo/atomycicon.png" alt="logo atomyc animation">
 			</div>
@@ -721,6 +721,9 @@ p q r s t u v w x y z { | } ~
 			});
 
 		});
+		function setanimation(){
+			alert($("#setanimation").val());
+		}
 	</script>
 </body>
 
