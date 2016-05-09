@@ -468,6 +468,19 @@ p q r s t u v w x y z { | } ~
 	<script src="js/modernizr-2.8.3.min.js"></script>
 	<script src="js/less.min.js"></script>
 	<script src="js/js.js"></script>
+	<script>
+		$(document).ready(function () {
+
+			$("#showcode").click(function () {
+				if ($("#showcode").is(':checked')) {
+					alert("Está activado");
+				} else {
+					alert("No está activado");
+				}
+			});
+
+		});
+	</script>
 </body>
 
 </html>
