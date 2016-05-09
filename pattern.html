@@ -134,6 +134,20 @@
 				<li class="secondaryfont"><em>Secondary font italic 'Lato', "sans-serif"</em></li>
 				<li class="secondaryfont"><b>Secondary font bold 'Lato', "sans-serif"</b></li>
 			</ul>
+			<div class="show_code">
+				<pre>
+					<code>
+&lt;ul class=&quot;list_no_style&quot;&gt;
+&lt;li class=&quot;primaryfont&quot;&gt;Primary font 'Quicksand', &quot;sans-serif&quot;&lt;/li&gt;
+&lt;li class=&quot;primaryfont&quot;&gt;&lt;em&gt;Primary font italic 'Quicksand', &quot;sans-serif&quot;&lt;/em&gt;&lt;/li&gt;
+&lt;li class=&quot;primaryfont&quot;&gt;&lt;b&gt;Primary font bold 'Quicksand', &quot;sans-serif&quot;&lt;/b&gt;&lt;/li&gt;
+&lt;li class=&quot;secondaryfont&quot;&gt;Secondary font 'Lato', &quot;sans-serif&quot;&lt;/li&gt;
+&lt;li class=&quot;secondaryfont&quot;&gt;&lt;em&gt;Secondary font italic 'Lato', &quot;sans-serif&quot;&lt;/em&gt;&lt;/li&gt;
+&lt;li class=&quot;secondaryfont&quot;&gt;&lt;b&gt;Secondary font bold 'Lato', &quot;sans-serif&quot;&lt;/b&gt;&lt;/li&gt;
+&lt;/ul&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Basic grid
 			</h2>
@@ -473,9 +487,9 @@ p q r s t u v w x y z { | } ~
 
 			$("#showcode").click(function () {
 				if ($("#showcode").is(':checked')) {
-					$(".show_code").css("display","block");
+					$(".show_code").css("display", "block");
 				} else {
-					$(".show_code").css("display","none");
+					$(".show_code").css("display", "none");
 				}
 			});
 
