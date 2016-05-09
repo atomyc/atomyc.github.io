@@ -227,3 +227,75 @@ Animation
 		transform: translate(0, 0)
 	}
 }
+
+
+/*DOUBLE FLASH ANIMATION*/
+
+.double-flashanimated {
+	animation: double-flash 2s ease infinite;
+}
+
+@keyframes doubleflash {
+	0% {
+		opacity: 1
+	}
+	25% {
+		opacity: 0
+	}
+	50% {
+		opacity: 1
+	}
+	75% {
+		opacity: 0
+	}
+	100% {
+		opacity: 1
+	}
+}
+
+
+/*BOUNCE ANIMATION*/
+
+.bounceanimated {
+	animation: bounce 1.6s ease infinite;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0)
+	}
+	12.5% {
+		transform: translateY(0)
+	}
+	25% {
+		transform: translateY(0)
+	}
+	50% {
+		transform: translateY(-15px)
+	}
+	62.5% {
+		transform: translateY(0)
+	}
+	75% {
+		transform: translateY(-15px)
+	}
+	100% {
+		transform: translateY(0)
+	}
+}
+
+
+/*SPIN ANIMATION*/
+
+.spinanimated {
+	animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg)
+	}
+	100% {
+		transform: rotate(359deg)
+	}
+}
