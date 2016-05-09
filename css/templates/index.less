@@ -36,6 +36,7 @@ Index template
 @import "../molecules/list_no_style.less";
 
 /*ORGANISMS*/
+
 @import "../organisms/footer.less";
 
 /*TEMPLATES*/
@@ -121,33 +122,33 @@ Index template
 		}
 		p {
 			font-size: 1.42rem;
-			&:last-child{
+			&:last-child {
 				font-size: 1.07rem;
 			}
 		}
 	}
 }
 
-#link_explore{
+#link_explore {
 	text-align: center;
 	margin-bottom: 60px;
-	a{
+	a {
 		font-size: 1.42rem;
 	}
 }
 
-footer{
+footer {
 	margin-top: 60px;
 	text-align: center;
-	ul{
-		li{
-			a{
+	ul {
+		li {
+			margin-right: 30px;
+			&:last-child {
+				margin-right: 0px;
+			}
+			a {
 				color: @whitecolour;
 				font-size: 1.42rem;
-				margin-right: 30px;
-				&:last-child{
-					margin-right: 0px;
-				}
 			}
 		}
 	}
