@@ -35,10 +35,6 @@
 				<option value="organism">organisms</option>
 				<option value="templates">templates</option>
 			</select>
-				<label for="showcode">
-					Show code
-					<input type="checkbox" id="showcode">
-				</label>
 		</h1>
 		</div>
 	</div>
@@ -46,6 +42,10 @@
 		<section class="kol-75 centerkol">
 			<h2>
 				Colors
+				<label for="colorscode">
+					Show code
+					<input type="checkbox" id="colorscode">
+				</label>
 			</h2>
 			<ul class="kol-1 list_one_line kolflex flexdir_ltr flex_multi_ltr flex_btw">
 				<li class="card_color">
@@ -84,7 +84,7 @@
 					</div>
 				</li>
 			</ul>
-			<div class="show_code">
+			<div class="show_code" id="colorscodebox">
 				<pre>
 					<code>
 					&lt;ul class=&quot;kol-1 list_one_line kolflex flexdir_ltr flex_multi_ltr flex_btw&quot;&gt;
@@ -129,6 +129,10 @@
 			</div>
 			<h2>
 				Fonts
+				<label for="headingcode">
+					Show code
+					<input type="checkbox" id="headingcode">
+				</label>
 			</h2>
 			<ul class="list_no_style">
 				<li class="primaryfont">Primary font 'Quicksand', "sans-serif"</li>
@@ -138,7 +142,7 @@
 				<li class="secondaryfont"><em>Secondary font italic 'Lato', "sans-serif"</em></li>
 				<li class="secondaryfont"><b>Secondary font bold 'Lato', "sans-serif"</b></li>
 			</ul>
-			<div class="show_code">
+			<div class="show_code" id="headingcodebox">
 				<pre>
 					<code>
 &lt;ul class=&quot;list_no_style&quot;&gt;
@@ -154,6 +158,10 @@
 			</div>
 			<h2>
 				Basic grid
+				<label for="basicgridcode">
+					Show code
+					<input type="checkbox" id="basicgridcode">
+				</label>
 			</h2>
 			<div class="kolbig">
 				<div class="boxdemo kol-1">100%</div>
@@ -235,7 +243,7 @@
 				<div class="kol-12 boxdemo">8%</div>
 				<div class="kol-12 boxdemo">8%</div>
 			</div>
-			<div class="show_code">
+			<div class="show_code" id="basicgridcodebox">
 				<pre>
 					<code>
 &lt;div class=&quot;kolbig&quot;&gt;
@@ -323,6 +331,10 @@
 			</div>
 			<h2>
 				Flex grid
+				<label for="flexgridcode">
+					Show code
+					<input type="checkbox" id="flexgridcode">
+				</label>
 			</h2>
 			<div class="content_flex_demo">
 				<h3>Example1: items ordered from left to right with the option to more than one line and separation equal everywhere.</h3>
@@ -333,7 +345,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox1">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex flexdir_ltr flex_multi_ltr flex_around&quot;&gt;
@@ -356,7 +368,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox2">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex flexdir_ltr flex_multi_ltr flex_btw&quot;&gt;
@@ -379,7 +391,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox3">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex kolflex flexdir_rtl flex_around&quot;&gt;
@@ -402,7 +414,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox4">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex flexdir_btt&quot;&gt;
@@ -426,7 +438,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox5">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex flex_multi_ltr flex_around flex_alg_center flex_demo_height&quot;&gt;
@@ -449,7 +461,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox6">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex flex_multi_ltr flex_around flex_alg_base flex_demo_height&quot;&gt;
@@ -472,7 +484,7 @@
 					<div class="boxdemoflex">4</div>
 					<div class="boxdemoflex">5</div>
 				</div>
-				<div class="show_code">
+				<div class="show_code" id="flexgridcodebox7">
 					<pre>
 					<code>
 &lt;div class=&quot;kolflex flex_multi_ltr flex_around flex_alg_end flex_demo_height&quot;&gt;
@@ -488,6 +500,10 @@
 			</div>
 			<h2>
 				Colum grid
+				<label for="columgridcode">
+					Show code
+					<input type="checkbox" id="columgridcode">
+				</label>
 			</h2>
 			<div class='koltable_4'>
 				<article class='contable'>
@@ -521,7 +537,7 @@
 					</div>
 				</article>
 			</div>
-			<div class="show_code">
+			<div class="show_code" id="columgridcodebox">
 				<pre>
 					<code>
 &lt;div class='koltable_4'&gt;
@@ -720,18 +736,60 @@ p q r s t u v w x y z { | } ~
 	<script src="js/js.js"></script>
 	<script>
 		$(document).ready(function () {
-
-			$("#showcode").click(function () {
-				if ($("#showcode").is(':checked')) {
-					$(".show_code").css("display", "block");
+			$("#colorscode").click(function () {
+				if ($("#colorscode").is(':checked')) {
+					$("#colorscodebox").css("display", "block");
 				} else {
-					$(".show_code").css("display", "none");
+					$("#colorscodebox").css("display", "none");
 				}
 			});
 
+			$("#headingcode").click(function () {
+				if ($("#headingcode").is(':checked')) {
+					$("#headingcodebox").css("display", "block");
+				} else {
+					$("#headingcodebox").css("display", "none");
+				}
+			});
+
+			$("#basicgridcode").click(function () {
+				if ($("#basicgridcode").is(':checked')) {
+					$("#basicgridcodebox").css("display", "block");
+				} else {
+					$("#basicgridcodebox").css("display", "none");
+				}
+			});
+
+			$("#flexgridcode").click(function () {
+				if ($("#flexgridcode").is(':checked')) {
+					$("#flexgridcodebox1").css("display", "block");
+					$("#flexgridcodebox2").css("display", "block");
+					$("#flexgridcodebox3").css("display", "block");
+					$("#flexgridcodebox4").css("display", "block");
+					$("#flexgridcodebox5").css("display", "block");
+					$("#flexgridcodebox6").css("display", "block");
+					$("#flexgridcodebox7").css("display", "block");
+				} else {
+					$("#flexgridcodebox1").css("display", "none");
+					$("#flexgridcodebox2").css("display", "none");
+					$("#flexgridcodebox3").css("display", "none");
+					$("#flexgridcodebox4").css("display", "none");
+					$("#flexgridcodebox5").css("display", "none");
+					$("#flexgridcodebox6").css("display", "none");
+					$("#flexgridcodebox7").css("display", "none");
+				}
+			});
+			$("#columgridcode").click(function () {
+				if ($("#columgridcode").is(':checked')) {
+					$("#columgridcodebox").css("display", "block");
+				} else {
+					$("#columgridcodebox").css("display", "none");
+				}
+			});
 		});
-		function setanimation(){
-			$("#getanimation").attr("class","animated " + $("#setanimation").val())
+
+		function setanimation() {
+			$("#getanimation").attr("class", "animated " + $("#setanimation").val())
 		}
 	</script>
 </body>
