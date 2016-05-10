@@ -18,9 +18,10 @@ Install .atomyc framework (HTML & CSS):
 ```
 
 Install .atomyc framework (HTML & Less):
--First of all you have to create a template file.
--Next in this file importas atoms, molecules and organisms that interest you. (atomyc.less has all that files import).
--Them:
+- First of all you have to create a template file.
+- Next in this file importas atoms, molecules and organisms that interest you. (atomyc.less has all that files import).
+- 
+
 ```bash
 <head>
 	<meta charset="utf-8">
