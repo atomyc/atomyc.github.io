@@ -31,3 +31,5 @@ Install .atomyc framework (HTML & Less):
 	<link rel="stylesheet" type="text/css" href="atomyc_less/templates/your_template.less" media="screen" />
 </head>
 ```
+
+Explore the code: http://atomyc.github.io/pattern.html 
