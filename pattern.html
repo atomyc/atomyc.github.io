@@ -620,6 +620,10 @@
 			</div>
 			<h2>
 				Headings
+				<label for="headingscode">
+					Show code
+					<input type="checkbox" id="headingscode">
+				</label>
 			</h2>
 			<ul class="list_no_style">
 				<li>
@@ -635,6 +639,18 @@
 				<li>
 					<h6>Heading level 6</h6></li>
 			</ul>
+			<div class="show_code" id="headingscodebox">
+				<pre>
+					<code>
+					&lt;h1&gt;Heading level 1&lt;/h1&gt; 
+					&lt;h2&gt;Heading level 2&lt;/h2&gt; 
+					&lt;h3&gt;Heading level 3&lt;/h3&gt; 
+					&lt;h4&gt;Heading level 4&lt;/h4&gt; 
+					&lt;h5&gt;Heading level 5&lt;/h5&gt; 
+					&lt;h6&gt;Heading level 6&lt;/h6&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Paragraph
 			</h2>
@@ -800,12 +816,19 @@ p q r s t u v w x y z { | } ~
 					$("#columgridcodebox").css("display", "none");
 				}
 			});
-			
+
 			$("#visibilitycode").click(function () {
 				if ($("#visibilitycode").is(':checked')) {
 					$("#visibilitycodebox").css("display", "block");
 				} else {
 					$("#visibilitycodebox").css("display", "none");
+				}
+			});
+			$("#headingscode").click(function () {
+				if ($("#headingscode").is(':checked')) {
+					$("#headingscodebox").css("display", "block");
+				} else {
+					$("#headingscodebox").css("display", "none");
 				}
 			});
 		});
