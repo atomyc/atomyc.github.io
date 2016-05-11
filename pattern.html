@@ -773,8 +773,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dig
 			</div>
 			<h2>
 				Hr tag
+				<label for="hrcode">
+					Show code
+					<input type="checkbox" id="hrcode">
+				</label>
 			</h2>
 			<hr>
+			<div class="show_code" id="hrcodebox">
+				<pre>
+					<code>
+					&lt;hr&lt; 
+					</code>
+				</pre>
+			</div>
 			<h2>Preformatted text</h2>
 			<pre>  	
 P R E F O R M A T T E D T E X T
@@ -929,6 +940,14 @@ p q r s t u v w x y z { | } ~
 					$("#timecodebox").css("display", "block");
 				} else {
 					$("#timecodebox").css("display", "none");
+				}
+			});
+			
+			$("#hrcode").click(function () {
+				if ($("#hrcode").is(':checked')) {
+					$("#hrcodebox").css("display", "block");
+				} else {
+					$("#hrcodebox").css("display", "none");
 				}
 			});
 		});
