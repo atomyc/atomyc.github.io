@@ -672,10 +672,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dig
 			</div>
 			<h2>
 				Blockquote
+				<label for="blockquotecode">
+					Show code
+					<input type="checkbox" id="blockquotecode">
+				</label>
 			</h2>
 			<blockquote>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dignissim sollicitudin. Cras convallis nulla libero, at efficitur dolor aliquam at. Praesent tincidunt libero eros, vitae accumsan quam sagittis non. Ut efficitur quam in erat fermentum, et euismod magna scelerisque. Ut pretium scelerisque semper. Aliquam gravida urna non dictum tempor. Fusce tempor leo et purus laoreet varius. Etiam lectus enim, pretium eu sapien id, iaculis lobortis ex.
 			</blockquote>
+			<div class="show_code" id="blockquotecodebox">
+				<pre>
+					<code>
+					&lt;blockquote&gt; 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dignissim sollicitudin. Cras convallis nulla libero, at efficitur dolor aliquam at. Praesent tincidunt libero eros, vitae accumsan quam sagittis non. Ut efficitur quam in erat fermentum, et euismod magna scelerisque. Ut pretium scelerisque semper. Aliquam gravida urna non dictum tempor. Fusce tempor leo et purus laoreet varius. Etiam lectus enim, pretium eu sapien id, iaculis lobortis ex. 
+&lt;/blockquote&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Inline text
 			</h2>
@@ -849,6 +862,13 @@ p q r s t u v w x y z { | } ~
 					$("#paragraphcodebox").css("display", "block");
 				} else {
 					$("#paragraphcodebox").css("display", "none");
+				}
+			});
+			$("#blockquotecode").click(function () {
+				if ($("#blockquotecode").is(':checked')) {
+					$("#blockquotecodebox").css("display", "block");
+				} else {
+					$("#blockquotecodebox").css("display", "none");
 				}
 			});
 		});
