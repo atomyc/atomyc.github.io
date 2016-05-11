@@ -597,6 +597,10 @@
 			</div>
 			<h2>
 				Visibility
+				<label for="visibilitycode">
+					Show code
+					<input type="checkbox" id="visibilitycode">
+				</label>
 			</h2>
 			<ul class="list_no_style">
 				<li class="hide_small">This text is hidden on smaller screens</li>
@@ -604,6 +608,16 @@
 				<li class="hide_large">This text is hidden on large screens</li>
 				<li class="hide_small"><em>This text is only visible on large screens</em></li>
 			</ul>
+			<div class="show_code" id="visibilitycodebox">
+				<pre>
+					<code>
+					&lt;span class=&quot;hide_small&quot;&gt;This text is hidden on smaller screens&lt;/span&gt; 
+					&lt;span class=&quot;hide_large&quot;&gt;&lt;em&gt;This text is only visible on smaller screens&lt;/em&gt;&lt;/span&gt; 
+					&lt;span class=&quot;hide_large&quot;&gt;This text is hidden on large screens&lt;/span&gt; 
+					&lt;span class=&quot;hide_small&quot;&gt;&lt;em&gt;This text is only visible on large screens&lt;/em&gt;&lt;/span&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Headings
 			</h2>
@@ -784,6 +798,14 @@ p q r s t u v w x y z { | } ~
 					$("#columgridcodebox").css("display", "block");
 				} else {
 					$("#columgridcodebox").css("display", "none");
+				}
+			});
+			
+			$("#visibilitycode").click(function () {
+				if ($("#visibilitycode").is(':checked')) {
+					$("#visibilitycodebox").css("display", "block");
+				} else {
+					$("#visibilitycodebox").css("display", "none");
 				}
 			});
 		});
