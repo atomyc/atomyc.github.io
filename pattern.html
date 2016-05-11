@@ -691,6 +691,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dig
 			</div>
 			<h2>
 				Inline text
+				<label for="inlinetextcode">
+					Show code
+					<input type="checkbox" id="inlinetextcode">
+				</label>
 			</h2>
 			<ul class="list_no_style">
 				<li><a href="#">This is a link</a></li>
@@ -716,8 +720,40 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dig
 				<li>
 					The <var>variable element</var>, such as <var>x</var> = <var>y</var></li>
 			</ul>
+			<div class="show_code" id="inlinetextcodebox">
+				<pre>
+					<code>
+					&lt;ul&gt; 
+					&lt;li&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;strong&gt;Strong is used to indicate strong importance&lt;/strong&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;em&gt;This text has added emphasis&lt;/em&gt;&lt;/li&gt; 
+					&lt;li&gt;The &lt;b&gt;b element&lt;/b&gt; is stylistically different text from normal text, without any special importance&lt;/li&gt; 
+					&lt;li&gt;The &lt;i&gt;i element&lt;/i&gt; is text that is set off from the normal text&lt;/li&gt; 
+					&lt;li&gt;The &lt;u&gt;u element&lt;/u&gt; is text with an unarticulated, though explicitly rendered, non-textual annotation&lt;/li&gt;
+					&lt;li&gt;&lt;del&gt;This text is deleted&lt;/del&gt; and &lt;ins&gt;This text is inserted&lt;/ins&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;s&gt;This text has a strikethrough&lt;/s&gt;&lt;/li&gt; 
+					&lt;li&gt;Superscript&lt;sup&gt;&reg;&lt;/sup&gt;&lt;/li&gt; 
+					&lt;li&gt;Subscript for things like O&lt;sub&gt;2&lt;/sub&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;small&gt;This small text is small for for fine print, etc.&lt;/small&gt;&lt;/li&gt; 
+					&lt;li&gt;Abbreviation &lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;&lt;/li&gt; 
+					&lt;li&gt;Keybord input: &lt;kbd&gt;Cmd&lt;/kbd&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;q cite=&quot;http://html5doctor.com/tag/q/&quot;&gt;This text is a short inline quotation&lt;/q&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;cite&gt;This is a citation&lt;/cite&gt;&lt;/li&gt; 
+					&lt;li&gt;The &lt;dfn&gt;dfn element&lt;/dfn&gt; indicates a definition.&lt;/li&gt; 
+					&lt;li&gt;The &lt;mark&gt;mark element&lt;/mark&gt; indicates a highlight&lt;/li&gt; 
+					&lt;li&gt;&lt;code&gt;This is what inline code looks like.&lt;/code&gt;&lt;/li&gt; 
+					&lt;li&gt;&lt;samp&gt;This is sample output from a computer program&lt;/samp&gt;&lt;/li&gt; 
+					&lt;li&gt; The &lt;var&gt;variable element&lt;/var&gt;, such as &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt;&lt;/li&gt; 
+					&lt;/ul&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Time
+				<label for="timecode">
+					Show code
+					<input type="checkbox" id="timecode">
+				</label>
 			</h2>
 			<ul class="list_no_style">
 				<li>
@@ -727,6 +763,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dig
 					<time datetime="PT1H34M">1 <abbr title="hour">h</abbr> and 34<abbr title="minute">min</abbr></time>
 				</li>
 			</ul>
+			<div class="show_code" id="timecodebox">
+				<pre>
+					<code>
+					&lt;time datetime=&quot;2013-04-06T12:32+00:00&quot;&gt;2 weeks ago&lt;/time&gt; 
+					&lt;time datetime=&quot;PT1H34M&quot;&gt;1 &lt;abbr title=&quot;hour&quot;&gt;h&lt;/abbr&gt; and 34&lt;abbr title=&quot;minute&quot;&gt;min&lt;/abbr&gt;&lt;/time&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Hr tag
 			</h2>
@@ -869,6 +913,22 @@ p q r s t u v w x y z { | } ~
 					$("#blockquotecodebox").css("display", "block");
 				} else {
 					$("#blockquotecodebox").css("display", "none");
+				}
+			});
+
+			$("#inlinetextcode").click(function () {
+				if ($("#inlinetextcode").is(':checked')) {
+					$("#inlinetextcodebox").css("display", "block");
+				} else {
+					$("#inlinetextcodebox").css("display", "none");
+				}
+			});
+			
+			$("#timecode").click(function () {
+				if ($("#timecode").is(':checked')) {
+					$("#timecodebox").css("display", "block");
+				} else {
+					$("#timecodebox").css("display", "none");
 				}
 			});
 		});
