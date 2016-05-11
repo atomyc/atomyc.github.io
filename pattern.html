@@ -653,10 +653,23 @@
 			</div>
 			<h2>
 				Paragraph
+				<label for="paragraphcode">
+					Show code
+					<input type="checkbox" id="paragraphcode">
+				</label>
 			</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dignissim sollicitudin. Cras convallis nulla libero, at efficitur dolor aliquam at. Praesent tincidunt libero eros, vitae accumsan quam sagittis non. Ut efficitur quam in erat fermentum, et euismod magna scelerisque. Ut pretium scelerisque semper. Aliquam gravida urna non dictum tempor. Fusce tempor leo et purus laoreet varius. Etiam lectus enim, pretium eu sapien id, iaculis lobortis ex.
 			</p>
+			<div class="show_code" id="paragraphcodebox">
+				<pre>
+					<code>
+&lt;p&gt; 
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dignissim sollicitudin. Cras convallis nulla libero, at efficitur dolor aliquam at. Praesent tincidunt libero eros, vitae accumsan quam sagittis non. Ut efficitur quam in erat fermentum, et euismod magna scelerisque. Ut pretium scelerisque semper. Aliquam gravida urna non dictum tempor. Fusce tempor leo et purus laoreet varius. Etiam lectus enim, pretium eu sapien id, iaculis lobortis ex. 
+&lt;/p&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Blockquote
 			</h2>
@@ -829,6 +842,13 @@ p q r s t u v w x y z { | } ~
 					$("#headingscodebox").css("display", "block");
 				} else {
 					$("#headingscodebox").css("display", "none");
+				}
+			});
+			$("#paragraphcode").click(function () {
+				if ($("#paragraphcode").is(':checked')) {
+					$("#paragraphcodebox").css("display", "block");
+				} else {
+					$("#paragraphcodebox").css("display", "none");
 				}
 			});
 		});
