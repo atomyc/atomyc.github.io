@@ -782,7 +782,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel dui in erat dig
 			<div class="show_code" id="hrcodebox">
 				<pre>
 					<code>
-					&lt;hr&lt; 
+					&lt;hr&gt; 
 					</code>
 				</pre>
 			</div>
@@ -804,7 +804,7 @@ p q r s t u v w x y z { | } ~
 			<div class="show_code" id="precodebox">
 				<pre>
 					<code>
-					&lt;pre&lt;
+					&lt;pre&gt;
 P R E F O R M A T T E D T E X T
 ! " # $ % &amp; ' ( ) * + , - . /
 0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
@@ -812,12 +812,16 @@ P R E F O R M A T T E D T E X T
 P Q R S T U V W X Y Z [ \ ] ^ _
 ` a b c d e f g h i j k l m n o
 p q r s t u v w x y z { | } ~
-&lt;/pre&lt;
+&lt;/pre&gt;
 					</code>
 				</pre>
 			</div>
 			<h2>
 				Unordered list
+			<label for="ulcode">
+					Show code
+					<input type="checkbox" id="ulcode">
+				</label>
 			</h2>
 			<ul>
 				<li>This is a list item in an unordered list</li>
@@ -831,8 +835,29 @@ p q r s t u v w x y z { | } ~
 				</li>
 				<li>This is the last list item</li>
 			</ul>
+			<div class="show_code" id="ulcodebox">
+				<pre>
+					<code>
+					&lt;ul&gt; 
+					&lt;li&gt;This is a list item in an unordered list&lt;/li&gt; 
+					&lt;li&gt;An unordered list is a list in which the sequence of items is not important. Sometimes, an unordered list is a bulleted list. And this is a long list item in an unordered list that can wrap onto a new line. &lt;/li&gt; 
+					&lt;li&gt; Lists can be nested inside of each other 
+					&lt;ul&gt; 
+					&lt;li&gt;This is a nested list item&lt;/li&gt; 
+					&lt;li&gt;This is another nested list item in an unordered list&lt;/li&gt; 
+					&lt;/ul&gt; 
+					&lt;/li&gt; 
+					&lt;li&gt;This is the last list item&lt;/li&gt; 
+					&lt;/ul&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Ordered list
+				<label for="ulcode">
+					Show code
+					<input type="checkbox" id="olcode">
+				</label>
 			</h2>
 			<ol>
 				<li>This is a list item in an ordered list</li>
@@ -846,8 +871,29 @@ p q r s t u v w x y z { | } ~
 				</li>
 				<li>This is the last list item</li>
 			</ol>
+			<div class="show_code" id="olcodebox">
+				<pre>
+					<code>
+					&lt;ol&gt; 
+					&lt;li&gt;This is a list item in an ordered list&lt;/li&gt; 
+					&lt;li&gt;An ordered list is a list in which the sequence of items is important. An ordered list does not necessarily contain sequence characters.&lt;/li&gt;
+					&lt;li&gt; Lists can be nested inside of each other 
+					&lt;ol&gt; 
+					&lt;li&gt;This is a nested list item&lt;/li&gt; 
+					&lt;li&gt;This is another nested list item in an ordered list&lt;/li&gt; 
+					&lt;/ol&gt; 
+					&lt;/li&gt; 
+					&lt;li&gt;This is the last list item&lt;/li&gt; 
+					&lt;/ol&gt;
+					</code>
+				</pre>
+			</div>
 			<h2>
 				Definition list
+				<label for="dlcode">
+					Show code
+					<input type="checkbox" id="dlcode">
+				</label>
 			</h2>
 			<dl>
 				<dt>Definition List</dt>
@@ -859,6 +905,22 @@ p q r s t u v w x y z { | } ~
 				<dt>Here is term that shares a definition with the term below.</dt>
 				<dd>And it gets a definition too, which is this line.</dd>
 			</dl>
+			<div class="show_code" id="dlcodebox">
+				<pre>
+					<code>
+					&lt;dl&gt; 
+					&lt;dt&gt;Definition List&lt;/dt&gt; 
+					&lt;dd&gt;A number of connected items or names written or printed consecutively, typically one below the other.&lt;/dd&gt; 
+					&lt;dt&gt;This is a term.&lt;/dt&gt; 
+					&lt;dd&gt;This is the definition of that term.&lt;/dd&gt; 
+					&lt;dt&gt;Here is another term.&lt;/dt&gt; 
+					&lt;dd&gt;And it gets a definition too, which is this line.&lt;/dd&gt; 
+					&lt;dt&gt;Here is term that shares a definition with the term below.&lt;/dt&gt; 
+					&lt;dd&gt;And it gets a definition too, which is this line.&lt;/dd&gt; 
+					&lt;/dl&gt;
+					</code>
+				</pre>
+			</div>
 		</section>
 	</main>
 	<script src="js/jquery-1.11.2.min.js"></script>
@@ -970,12 +1032,36 @@ p q r s t u v w x y z { | } ~
 					$("#hrcodebox").css("display", "none");
 				}
 			});
-			
+
 			$("#precode").click(function () {
 				if ($("#precode").is(':checked')) {
 					$("#precodebox").css("display", "block");
 				} else {
 					$("#precodebox").css("display", "none");
+				}
+			});
+
+			$("#ulcode").click(function () {
+				if ($("#ulcode").is(':checked')) {
+					$("#ulcodebox").css("display", "block");
+				} else {
+					$("#ulcodebox").css("display", "none");
+				}
+			});
+
+			$("#olcode").click(function () {
+				if ($("#olcode").is(':checked')) {
+					$("#olcodebox").css("display", "block");
+				} else {
+					$("#olcodebox").css("display", "none");
+				}
+			});
+			
+			$("#dlcode").click(function () {
+				if ($("#dlcode").is(':checked')) {
+					$("#dlcodebox").css("display", "block");
+				} else {
+					$("#dlcodebox").css("display", "none");
 				}
 			});
 		});
