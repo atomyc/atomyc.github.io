@@ -970,6 +970,14 @@ p q r s t u v w x y z { | } ~
 					$("#hrcodebox").css("display", "none");
 				}
 			});
+			
+			$("#precode").click(function () {
+				if ($("#precode").is(':checked')) {
+					$("#precodebox").css("display", "block");
+				} else {
+					$("#precodebox").css("display", "none");
+				}
+			});
 		});
 
 		function setanimation() {
