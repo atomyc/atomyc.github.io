@@ -14,9 +14,17 @@ input,
 textarea {
 	font-family: @primaryfont !important;
 	width: 100%;
-	border: 2px solid #333;
+	border: 2px solid @blackcolor;
 	padding: 0.7em 0.7rem;
 	font-size: 100%;
 	margin: 5px 1px 0;
-	outline:  none;
+	outline: none;
+}
+
+.no_valid {
+	border: 2px solid @warningcolor;
+}
+
+.is_valid {
+	border: 2px solid @greencolor;
 }
