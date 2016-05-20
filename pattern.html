@@ -921,6 +921,15 @@ p q r s t u v w x y z { | } ~
 					</code>
 				</pre>
 			</div>
+			<h2>
+			Text fields (inputs)
+				<label for="dlcode">
+					Show code
+					<input type="checkbox" id="dlcode">
+				</label>
+			</h2>
+			<label for="text">Text Input <abbr title="Required">*</abbr></label>
+			<input id="text" type="text" placeholder="Text Input">
 		</section>
 	</main>
 	<script src="js/jquery-1.11.2.min.js"></script>
@@ -1056,7 +1065,7 @@ p q r s t u v w x y z { | } ~
 					$("#olcodebox").css("display", "none");
 				}
 			});
-			
+
 			$("#dlcode").click(function () {
 				if ($("#dlcode").is(':checked')) {
 					$("#dlcodebox").css("display", "block");
